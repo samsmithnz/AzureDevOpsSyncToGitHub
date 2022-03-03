@@ -16,6 +16,8 @@ jobs:
       - name: sync with external repo
         run: |
           #https://medium.com/@_oleksii_/how-to-synchronize-two-remote-git-repositories-e63b78892901
+          git config --global user.email "samsmithnz@github.com"
+          git config --global user.name "Sam Smith"
           git remote -v
           git remote add upstream https://samsmithnz@dev.azure.com/samsmithnz/AzureDevOpsSyncSource/_git/AzureDevOpsSyncSource
           git remote -v
