@@ -21,7 +21,6 @@ jobs:
           git remote -v
           git remote add upstream https://samsmithnz@dev.azure.com/samsmithnz/AzureDevOpsSyncSource/_git/AzureDevOpsSyncSource
           git remote -v
-          git fetch
           git fetch upstream
           git checkout main
           git merge upstream/main --strategy-option theirs --allow-unrelated-histories
