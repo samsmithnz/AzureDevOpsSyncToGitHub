@@ -1,0 +1,19 @@
+name: Repo sync
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      #- uses: actions/checkout@v2
+      - name: sync with external repo
+        run: |
+          git clone https://samsmithnz@dev.azure.com/samsmithnz/SamLearnsAzure/_git/SamLearnsAzure
+
