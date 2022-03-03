@@ -16,4 +16,8 @@ jobs:
       - name: sync with external repo
         run: |
           git clone https://samsmithnz@dev.azure.com/samsmithnz/SamLearnsAzure/_git/SamLearnsAzure
+          git remote -v
+          git remote add newRepo https://github.com/samsmithnz/AzureDevOpsSyncToGitHub
+          git remote -v
+
 
