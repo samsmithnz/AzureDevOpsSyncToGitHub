@@ -15,10 +15,13 @@ jobs:
       - uses: actions/checkout@v2
       - name: sync with external repo
         run: |
-          #git clone https://samsmithnz@dev.azure.com/samsmithnz/AzureDevOpsSyncSource/_git/AzureDevOpsSyncSource
+          #https://medium.com/@_oleksii_/how-to-synchronize-two-remote-git-repositories-e63b78892901
           git remote -v
           git remote add upstream https://samsmithnz@dev.azure.com/samsmithnz/AzureDevOpsSyncSource/_git/AzureDevOpsSyncSource
-          #git remote add newRepo https://github.com/samsmithnz/AzureDevOpsSyncToGitHub
           git remote -v
+          git fetch upstream
+          git checkout main
+          git merge upstream/main
+          git push
 
 
