@@ -17,7 +17,7 @@ jobs:
         run: |
           #git clone https://samsmithnz@dev.azure.com/samsmithnz/AzureDevOpsSyncSource/_git/AzureDevOpsSyncSource
           git remote -v
-          #git remote add upstream https://samsmithnz@dev.azure.com/samsmithnz/AzureDevOpsSyncSource/_git/AzureDevOpsSyncSource
+          git remote add upstream https://samsmithnz@dev.azure.com/samsmithnz/AzureDevOpsSyncSource/_git/AzureDevOpsSyncSource
           #git remote add newRepo https://github.com/samsmithnz/AzureDevOpsSyncToGitHub
           #git remote -v
 
