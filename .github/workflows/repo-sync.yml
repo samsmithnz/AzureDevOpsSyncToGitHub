@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      #- uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: sync with external repo
         run: |
           #git clone https://samsmithnz@dev.azure.com/samsmithnz/AzureDevOpsSyncSource/_git/AzureDevOpsSyncSource
